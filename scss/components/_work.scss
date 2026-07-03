@@ -1,11 +1,13 @@
+@import '../utiles/placeholders';
+
+
 .work {
   text-align: center;
 }
 
 .work ul {
-  display: flex;
+  @extend %flex-justify;
   gap: 30px;
-  justify-content: center;
   list-style-type: none;
   margin-bottom: 94px;
 }

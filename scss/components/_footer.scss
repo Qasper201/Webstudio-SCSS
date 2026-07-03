@@ -1,3 +1,6 @@
+@import '../utiles/placeholders';
+@import '../utiles/mixin';
+
 footer {
   background-color: var(--dark-bg);
   color: var(--white);
@@ -57,9 +60,9 @@ footer .container {
 .footer__social-list a {
   width: 44px;
   height: 44px;
-  display: flex;
+  @extend %flex-justify;
   align-items: center;
-  justify-content: center;
+  
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition);
@@ -88,8 +91,7 @@ footer .container {
 }
 
 .footer__form input {
-  width: 358px;
-  height: 50px;
+  @include size(358px, 50px);
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -112,9 +114,8 @@ footer .container {
 }
 
 .footer__form button {
-  display: flex;
+  @extend %flex-justify;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   height: 50px;
   padding: 0 28px;

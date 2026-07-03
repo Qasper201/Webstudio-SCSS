@@ -1,3 +1,6 @@
+@import '../utiles/placeholders';
+
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -7,10 +10,9 @@
 }
 
 .team .team__list {
+  @extend %flex-justify;
   list-style: none;
-  display: flex;
   gap: 30px;
-  justify-content: center;
   padding: 0;
 }
 
@@ -52,9 +54,8 @@
  
 .team .team__list {
   list-style: none;
-  display: flex;
+  @extend %flex-justify;
   gap: 30px;
-  justify-content: center;
   padding: 0;
 }
  
@@ -87,8 +88,7 @@
 }
  
 .socials__list {
-  display: flex;
-  justify-content: center;
+  @extend %flex-justify;
   gap: 10px;
   margin-top: 16px;
   padding: 0;
