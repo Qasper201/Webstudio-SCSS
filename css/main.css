@@ -36,19 +36,16 @@ header {
   border-bottom: 1px solid var(--border-light);
   padding: 20px 0;
 }
-
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 header a {
   color: var(--text-main);
   text-decoration: none;
   line-height: 1.2;
 }
-
 header p {
   color: var(--text-secondary);
   line-height: 1.2;
@@ -60,7 +57,6 @@ header p {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
-
 .header__logo span,
 .footer__logo span {
   color: var(--accent);
@@ -71,7 +67,6 @@ header p {
   align-items: center;
   gap: 344px;
 }
-
 .header__nav ul {
   display: flex;
   gap: 30px;
@@ -79,7 +74,6 @@ header p {
   list-style: none;
   padding: 0;
 }
-
 .header__nav a {
   font-weight: bold;
   line-height: 1.2;
@@ -87,16 +81,12 @@ header p {
   padding-bottom: 5px;
   transition: color var(--transition);
 }
-
-.header__nav :hover {
+.header__nav a:hover {
   color: var(--accent);
 }
-
-.header__nav a.header__link--active,
-.header__nav a.active {
+.header__nav a.header__link--active, .header__nav a.active {
   color: var(--accent);
 }
-
 .header__nav a::after {
   content: "";
   position: absolute;
@@ -110,16 +100,24 @@ header p {
   transform-origin: left;
   transition: transform var(--transition);
 }
-
-.header__nav a:hover::after,
-.header__nav a.header__link--active::after,
-.header__nav a.active::after {
+.header__nav a:hover::after, .header__nav a.header__link--active::after, .header__nav a.active::after {
   transform: scaleX(1);
 }
 
-.header__email a:hover,
-.header__phone a:hover {
+.header__email,
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__email:hover a,
+.header__phone:hover a {
   color: var(--accent);
+}
+.header__email:hover .header__email-icon, .header__email:hover .header__phone-icon,
+.header__phone:hover .header__email-icon,
+.header__phone:hover .header__phone-icon {
+  fill: var(--accent);
 }
 
 .header__email-icon,
@@ -128,18 +126,6 @@ header p {
   height: 12px;
   display: block;
   transition: fill var(--transition);
-}
-
-.header__email:hover .header__email-icon,
-.header__phone:hover .header__phone-icon {
-  fill: var(--accent);
-}
-
-.header__email,
-.header__phone {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 h3 {
