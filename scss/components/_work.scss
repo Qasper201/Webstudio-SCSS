@@ -10,34 +10,31 @@
   margin-bottom: 94px;
 }
 
-.work-ul-item {
+.work__item {
   border: none;
   width: calc((100% - 60px) / 3);
 }
 
-.work-card {
+.work__card {
   position: relative;
   overflow: hidden;
 }
 
-.work-card img {
+.work__card img {
   display: block;
   width: 100%;
 }
 
-.work-label {
+.work__label {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 70px;
-
   margin: 0;
   padding: 20px 0;
   text-align: center;
-
   background: rgba(47, 48, 58, 0.8);
   color: var(--white);
-
   font-weight: 700;
 }

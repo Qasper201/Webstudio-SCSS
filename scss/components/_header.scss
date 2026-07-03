@@ -22,23 +22,25 @@ header p {
   line-height: 1.2;
 }
 
-.logo {
+.header__logo,
+.footer__logo {
   font-size: 26px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
 
-.logo span {
+.header__logo span,
+.footer__logo span {
   color: var(--accent);
 }
 
-.navigation {
+.header__nav {
   display: flex;
   align-items: center;
   gap: 344px;
 }
 
-.navigation ul {
+.header__nav ul {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -46,68 +48,63 @@ header p {
   padding: 0;
 }
 
-.navigation a {
+.header__nav a {
   font-weight: bold;
   line-height: 1.2;
   position: relative;
   padding-bottom: 5px;
-
   transition: color var(--transition);
 }
 
-.navigation :hover {
+.header__nav :hover {
   color: var(--accent);
 }
 
-.navigation a.active {
+.header__nav a.header__link--active,
+.header__nav a.active {
   color: var(--accent);
 }
 
-.navigation a::after {
+.header__nav a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
-
   width: 100%;
   height: 4px;
-
   background-color: var(--accent);
   border-radius: 2px;
-
   transform: scaleX(0);
   transform-origin: left;
-
   transition: transform var(--transition);
 }
 
-.navigation a:hover::after,
-.navigation a.active::after {
+.header__nav a:hover::after,
+.header__nav a.header__link--active::after,
+.header__nav a.active::after {
   transform: scaleX(1);
 }
 
-
-.email a:hover,
-.tel a:hover {
+.header__email a:hover,
+.header__phone a:hover {
   color: var(--accent);
 }
 
-.icon-email,
-.icon-tel {
+.header__email-icon,
+.header__phone-icon {
   width: 16px;
   height: 12px;
   display: block;
-
   transition: fill var(--transition);
 }
 
-.email:hover .icon-email,
-.tel:hover .icon-tel {
+.header__email:hover .header__email-icon,
+.header__phone:hover .header__phone-icon {
   fill: var(--accent);
 }
 
-.email,
-.tel {
+.header__email,
+.header__phone {
   display: flex;
   align-items: center;
   gap: 10px;

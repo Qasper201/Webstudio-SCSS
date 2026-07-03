@@ -21,10 +21,7 @@
   font-weight: 500;
   line-height: 1.2;
   text-decoration: none;
-
-  transition:
-    background-color var(--transition),
-    color var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
 
 .filters a:hover {
